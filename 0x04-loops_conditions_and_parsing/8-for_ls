@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This script prints filename parts after first dash
+for file in *-*; do echo "${file#*-}"; done
