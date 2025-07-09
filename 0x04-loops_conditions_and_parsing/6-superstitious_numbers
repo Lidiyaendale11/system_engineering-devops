@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
-# This script displays numbers and superstitions with a case
+# This script uses case statement to print cultural superstitions
 i=1
-while [ $i -le 20 ]; do echo "$i"; case $i in 4) echo "bad luck from China";; 9) echo "bad luck from Japan";; 17) echo "bad luck from Italy";; esac; ((i++)); done
+while [ $i -le 20 ]; do
+  echo "$i"
+  case $i in
+    4) echo "bad luck from China" ;;
+    9) echo "bad luck from Japan" ;;
+    17) echo "bad luck from Italy" ;;
+  esac
+  i=$((i + 1))
+done
