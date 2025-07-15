@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Displays "I am invincible!!!" when receiving a sigterm signal 
+
+terminate() {
+	echo "I am invincible!!!"
+}
+
+trap terminate SIGTERM
+
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
