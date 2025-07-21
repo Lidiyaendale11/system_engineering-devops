@@ -1,14 +1,17 @@
 #!/usr/bin/env bash
-# Displays "I am invincible!!!" when receiving a sigterm signal 
+# Script name: 7-highlander
+# Author: Lidiya Endale
+# Description: Prints "To infinity and beyond" in an infinite loop,
+# and traps SIGTERM to print "I am invincible!!!" instead of terminating.
 
 terminate() {
-	echo "I am invincible!!!"
+    echo "I am invincible!!!"
 }
 
 trap terminate SIGTERM
 
 while true
 do
-	echo "To infinity and beyond"
-	sleep 2
+    echo "To infinity and beyond"
+    sleep 2
 done
